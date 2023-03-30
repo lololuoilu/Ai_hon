@@ -28,8 +28,8 @@ import time
 # 画像の続きを作成する
 import base64
 
-# CHATGPT_API_KEY = os.environ.get('OPENAI')
-CHATGPT_API_KEY = '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'
+CHATGPT_API_KEY = os.environ.get('OPENAI')
+# CHATGPT_API_KEY = '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'
 openai.api_key = CHATGPT_API_KEY
 
 #----------------------
