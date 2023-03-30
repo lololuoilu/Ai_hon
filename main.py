@@ -163,7 +163,7 @@ def cv2_putText_1(img, text, org, fontFace, fontScale, color):
     colorRGB = (r, g, b)
     imgPIL = cv2pil(img)
     draw = ImageDraw.Draw(imgPIL)
-    fontPIL = ImageFont.truetype(font = fontFace, size = fontScale)
+    fontPIL = ImageFont.truetype(font = fontFace, size = fontScale)#
     draw.text(xy = (x,y), text = text, fill = colorRGB, font = fontPIL)
     # w, h = draw.textsize(text, font = fontPIL)
     # draw.rectangle([(x,y), (x+w,y+h)], outline = (255,0,0), width = 1)
@@ -186,7 +186,7 @@ def with_text(text, img):
     white_bg[:, :width, :] = img
 
     # 文字を入れる
-    fontFace = "./ヒラギノ丸ゴ ProN W4.ttc"
+    fontFace = "/opt/render/project/src/.fonts/ヒラギノ丸ゴ ProN W4.ttc"
     # fontFace_cv2 = cv2.FONT_HERSHEY_SIMPLEX
     font_scale = 12
     color = (0, 0, 0)
