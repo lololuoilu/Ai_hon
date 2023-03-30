@@ -28,8 +28,8 @@ import time
 # 画像の続きを作成する
 import base64
 
-CHATGPT_API_KEY = os.environ.get('OPENAI')
-# CHATGPT_API_KEY = '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'
+# CHATGPT_API_KEY = os.environ.get('OPENAI')
+CHATGPT_API_KEY = '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'
 openai.api_key = CHATGPT_API_KEY
 
 #----------------------
@@ -187,8 +187,7 @@ def with_text(text, img):
     white_bg[:, :width, :] = img
 
     # 文字を入れる
-    # fontFace = "/System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc"
-    fontFace = "Meiryo"
+    fontFace = "./ヒラギノ丸ゴ ProN W4.ttc"
     # fontFace_cv2 = cv2.FONT_HERSHEY_SIMPLEX
     font_scale = 12
     color = (0, 0, 0)
