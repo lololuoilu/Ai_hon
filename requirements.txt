@@ -4,8 +4,7 @@ pandas
 Pillow
 numpy
 openai
-libgl1-mesa-dev
-opencv-python
+opencv-python--headless
 
 
 
