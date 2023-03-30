@@ -186,7 +186,7 @@ def with_text(text, img):
     white_bg[:, :width, :] = img
 
     # 文字を入れる
-    fontFace = "/.fonts/ヒラギノ丸ゴ ProN W4.ttc"
+    fontFace = "./.fonts/ipagp.ttf"
     # fontFace_cv2 = cv2.FONT_HERSHEY_SIMPLEX
     font_scale = 12
     color = (0, 0, 0)
