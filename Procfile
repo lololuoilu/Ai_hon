@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run enthalpy.py
+web: sh setup.sh && streamlit run main.py
