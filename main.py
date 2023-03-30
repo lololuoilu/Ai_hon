@@ -30,7 +30,7 @@ import base64
 
 CHATGPT_API_KEY = os.getenv('OPENAI')
 
-openai.api_key = CHATGPT_API_KEY
+openai.api_key = str(CHATGPT_API_KEY)
 
 #----------------------
 # 設定入力とストラクチャ
