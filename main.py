@@ -28,8 +28,9 @@ import time
 # 画像の続きを作成する
 import base64
 
-CHATGPT_API_KEY = os.environ.get('OPENAI')
-openai.api_key = (CHATGPT_API_KEY)
+# CHATGPT_API_KEY = os.environ.get('OPENAI')
+CHATGPT_API_KEY = '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'
+openai.api_key = CHATGPT_API_KEY
 
 #----------------------
 # 設定入力とストラクチャ
@@ -65,7 +66,7 @@ style = style_dict[style]
 
 age = st.sidebar.slider('対象年齢', min_value=0, max_value=18, step=1)
 # https://happylilac.net/ehon-erabikata-point1-nenreibetubunsetsu.html
-pages = st.sidebar.slider('ページ数', min_value=8, max_value=16, step=1)
+pages = st.sidebar.slider('最大ページ数', min_value=8, max_value=16, step=1)
 
 
 #----------------------
@@ -186,7 +187,8 @@ def with_text(text, img):
     white_bg[:, :width, :] = img
 
     # 文字を入れる
-    fontFace = "/System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc"
+    # fontFace = "/System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc"
+    fontFace = "Meiryo"
     # fontFace_cv2 = cv2.FONT_HERSHEY_SIMPLEX
     font_scale = 12
     color = (0, 0, 0)
